@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+    width:100%;
+    font-family: "Lexend Exa", serif;
+    font-style: normal;
+    color:rgb(0, 0, 0);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgimg{
+    position: absolute;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container{
+    height:82%;
+    width:28%;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    box-shadow: 2px 2px 12px black;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+}
+
+.c1{
+    background-color: rgba(245, 245, 245, 0.662);
+    opacity: 0;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+
+@media(max-width:800px){
+    .container{
+        width:80%;
+    }
+}
+
+@media(max-width:1100px){
+    .container{
+        width:80%;
+    }
+}
+
+@keyframes slideIn{
+    from{
+        transform:translateY(-50px);
+        opacity:0;
+    }
+    to{
+        transform:translateY(0);
+        opacity: 1;
+    }
+}
