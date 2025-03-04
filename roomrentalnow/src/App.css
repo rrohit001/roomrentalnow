@@ -1,0 +1,84 @@
+nav{
+  opacity:0;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+  background-color:rgba(70, 131, 180, 0.902);
+}
+
+ul{
+  font-size: 18px;
+  text-shadow: 2px 1px 1px black;
+}
+
+.logoimg{
+  margin-top: 50px;
+  height: 190px;
+  width: 190px;
+  filter:drop-shadow(5px 5px 40px rgb(255, 255, 255));
+}
+
+.firstlogo{
+  filter:drop-shadow(5px 5px 40px rgb(255, 255, 255));
+}
+
+.heading{
+  width: 100%;
+  height:180px;
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.container2{
+  margin-top:60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:150px;
+  opacity: 0;
+  animation-name: slideIn;
+  animation-duration: 2s;
+  animation-delay: 2.3s;
+  animation-fill-mode: forwards;
+}
+
+.explore{
+  opacity:0;
+  animation-name: slideIn;
+  animation-duration: 1.7s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+.exploreh{
+  margin-top: -25px;
+}
+
+.explore:hover{
+  font-size: 28px; 
+}
+
+a{
+  text-decoration: none;
+  color:white;
+}
+
+a:visited{
+  color:white;
+}
+
+ul:hover{
+  color: silver;
+}
+
+.login:hover{
+  color:silver;
+}

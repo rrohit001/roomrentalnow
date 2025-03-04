@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body{
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  height:100%;
+  width: 100%;
+  background-image: url("assets/bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.firstlogo{
+  animation: fadeout 2s;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeout{
+  0%{
+    opacity:0;
+  }
+  50%{
+    opacity:1;
+  }
+  100%{
+    opacity:0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+@import "tailwindcss";
